@@ -1,1 +1,9 @@
+# idea
 .idea
+.vscode
+
+db.sqlite3
+env.cmd
+
+*.pyc
+__pycache__
