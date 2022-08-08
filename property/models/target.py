@@ -12,4 +12,4 @@ class Target(UserMixin, CreateMixin):
         verbose_name_plural = "目标"
 
     def __str__(self):
-        return self.target
+        return str(self.target)

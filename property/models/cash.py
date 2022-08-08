@@ -16,7 +16,7 @@ class DebitCard(UserMixin, CreateMixin):
         verbose_name_plural = "借记卡"
 
     def __str__(self):
-        return "Debit({})".format(self.card_id[-4:])
+        return "Debit({})".format(str(self.card_id)[-4:])
 
 
 class MonetaryFund(UserMixin, CreateMixin):
@@ -47,7 +47,7 @@ class AppBalance(UserMixin, CreateMixin):
         verbose_name_plural = "应用余额"
 
     def __str__(self):
-        return self.app_name
+        return self.get_app_name_display()
 
 
 class Accumulation(UserMixin, CreateMixin):

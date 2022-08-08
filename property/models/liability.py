@@ -15,4 +15,4 @@ class CreditCard(UserMixin, CreateMixin):
         verbose_name_plural = "信用卡"
 
     def __str__(self):
-        return "Credit({})".format(self.card_id[-4:])
+        return "Credit({})".format(str(self.card_id)[-4:])
