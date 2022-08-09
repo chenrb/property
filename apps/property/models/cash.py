@@ -1,7 +1,7 @@
 from django.db import models
 
-from property.constants import APP_NAME
-from property.models.mixin import UserMixin, CreateMixin
+from apps.property.constants import APP_NAME
+from apps.property.models.mixin import UserMixin, CreateMixin
 
 
 class DebitCard(UserMixin, CreateMixin):

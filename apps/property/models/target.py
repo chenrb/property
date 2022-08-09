@@ -1,6 +1,6 @@
 from django.db import models
 
-from property.models.mixin import UserMixin, CreateMixin
+from apps.property.models.mixin import UserMixin, CreateMixin
 
 
 class Target(UserMixin, CreateMixin):
