@@ -7,3 +7,5 @@ env.cmd
 
 *.pyc
 __pycache__
+
+config/local_settings.py
